@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../../node_modules/flowbite/dist/flowbite";
+
+@font-face {
+  font-family: "Lato Black Italic";
+  src: url("../assets/fonts/Lato_Black_Italic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Oswald Bold";
+  src: url("../assets/fonts/oswald-bold-webfont.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato Ligth";
+  src: url("../assets/fonts/Lato-Light.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+}
+
+.App {
+  text-align: center;
+}
+
+.font-lato-black-italic {
+  font-family: "Lato Black Italic", sans-serif;
+  font-size: 12pt;
+}
+
+.oswald-big {
+  font-family: "Oswald Bold", sans-serif;
+  font-size: 136px;
+  color: #63769d;
+}
+
+.oswald-small {
+  font-family: "Oswald Bold", sans-serif;
+  font-size: 32px;
+  color: #41506b;
+}
+
+.text-history {
+  font-family: "Lato Ligth", sans-serif;
+  font-size: 16px;
+  color: #000;
+  max-width: 50%;
+}
+
+.numero-titulo {
+  margin-top: 0px;
+  position: relative;
+  width: 180px;
+  top: 0;
+  left: 25%;
+}
+.titulo {
+  position: absolute;
+  top: 70px;
+  left: 150px;
+}
+
+.history-content {
+  position: relative;
+  top: 0px;
+  left: 30%;
+  width: 40%;
+  align-items: center;
+  text-align: justify;
+}
+.climb-content {
+  width: 40%;
+  text-align: justify;
+  margin: 0px !important;
+}
+
+.text-climb {
+  font-family: "Lato Ligth", sans-serif;
+  font-size: 16px;
+  color: #000;
+}
