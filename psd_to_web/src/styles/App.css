@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @import "../../node_modules/flowbite/dist/flowbite";
-
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @font-face {
   font-family: "Lato Black Italic";
   src: url("../assets/fonts/Lato_Black_Italic.woff2") format("woff2");
@@ -38,6 +38,11 @@
   font-family: "Oswald Bold", sans-serif;
   font-size: 136px;
   color: #63769d;
+}
+.oswald-big-02 {
+  font-family: "Oswald Bold", sans-serif;
+  font-size: 136px;
+  color: #b0b4be;
 }
 
 .oswald-small {
@@ -84,4 +89,36 @@
   font-family: "Lato Ligth", sans-serif;
   font-size: 16px;
   color: #000;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+.accordion-title {
+  font-family: "Oswald Bold", sans-serif;
+  font-size: 20px;
+  color: #41506b;
+  background-color: #b0b4be;
+}
+
+.accordion-title-active {
+  font-family: "Oswald Bold", sans-serif;
+  font-size: 20px;
+  color: #b0b4be;
+  background-color: #41506b;
+}
+.accordion-content {
+  background-color: #fff;
+}
+
+.title-schedule {
+  font-family: "Oswald Bold", sans-serif;
+  font-size: 32px;
+  color: #41506b;
+  padding-left: 5px;
+  padding-right: 5px;
 }

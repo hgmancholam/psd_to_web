@@ -1,12 +1,12 @@
-import ContentCard from "./content-card";
+import TabAccordion from "./tabs-acordeon";
 
 export default function Climb() {
   return (
-    <div className="bg-cover bg-no-repeat md:min-h-[90vh] min-w-full flex flex-col">
+    <div className="bg-cover bg-no-repeat md:min-h-[80vh] min-w-full flex flex-col">
       <div>
-        <div className=" bg-transparent relative flex flex-wrap">
+        <div className=" bg-transparent relative flex flex-wrap ">
           <div className="numero-titulo flex-none w-60">
-            <span className="oswald-big">02.</span>
+            <span className="oswald-big-02">02.</span>
             <div className="titulo">
               <span className="oswald-small">CLIMB.</span>
             </div>
@@ -23,11 +23,7 @@ export default function Climb() {
           </div>
         </div>
       </div>
-      <div className="bg-[#41506B]">
-        <dvi>Muntain 1</dvi>
-        <dvi>Muntain 2</dvi>
-      </div>
-      <ContentCard />
+      <TabAccordion />
     </div>
   );
 }

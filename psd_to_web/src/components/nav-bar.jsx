@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import { Navbar } from "flowbite-react";
 import {
   Container,
   Collapse,
+  Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
-
 } from "reactstrap";
 
 export default function Navcomponent() {
@@ -16,8 +15,8 @@ export default function Navcomponent() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Container className="po-relative">
-      <Navbar className="navbar-expand-lg h6-nav-bar fixed top-0 left-0 w-full bg-transparent z-50">
+    <Container className="po-absolute">
+      <Navbar className="navbar-expand-lg h6-nav-bar fixed top-0 left-0 w-full z-50 bg-transparent">
         <NavbarBrand href="/">
           <img alt="Logo website" src="./images/Logo.png" />
         </NavbarBrand>
@@ -30,8 +29,8 @@ export default function Navcomponent() {
           className="hover-dropdown ml-auto"
           id="h6-info"
         >
-          <Nav navbar className="ml-auto">
-            <NavItem>
+          <Nav navbar className="ml-auto bg-red">
+            <NavItem className="text-red">
               <a href="/">1. HISTORY</a>
             </NavItem>
             <NavItem>
